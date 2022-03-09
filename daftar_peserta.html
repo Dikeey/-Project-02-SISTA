@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Daftar Peserta</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style_jadwalTA.css"> -->
+    <title>Jadwal Seminar TA</title>
+    <style>
+      .container a{
+          text-decoration: none;
+      }
+      hr {
+        width: 10%;
+        margin-left: 0;
+        }
+    </style>
+
+<script>
+    function pindah(){
+        window.location.href = "/index.html";
+    }
+</script>
+  </head>
+  <body style="background-color: #FCE9C7">
+
+<!-- Header -->
+<div class="container fixed-top">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar pl-5  shadow-lg navbar-expand-lg navbar-light  pr-md-4 justify-content-between " style="background-color: #1499A6; ">
+                
+                <a class="navbar-brand" href="#"><img src="img/logo/logo-sista.png"  alt="Responsive image" >
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+        <div class="collapse navbar-collapse ml-md-5" id="navbarNavDropdown">
+                <ul class="navbar-nav  mr-auto " id="top-nav">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link active " href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                          </svg>  
+                        Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/#our_team">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-octagon-fill" viewBox="0 0 16 16">
+                                <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
+                              </svg>
+                         Our Team</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/#jadwal_seminar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-check-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                          </svg>
+                        Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/daftar_seminarTA.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                              </svg>
+                            Daftar Seminar</a>
+                      </li>
+                    <li class="nav-item mr-sm-5">
+                        <a class="nav-link" href="/#berita">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                              </svg>
+                            Berita</a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav ml-md-5 mr-sm-4 " id="top-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                              </svg>
+                            Daftar
+                            
+                        </a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                              </svg>
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            </div>
+        </div>
+    </div>
+<!-- <div class="container fixed-top">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar pl-5  shadow-lg navbar-expand-lg navbar-light  pr-md-4 justify-content-between " style="background-color: #1499A6; ">
+                
+                <a class="navbar-brand" href="#"><img src="img/logo/logo-sista.png"  alt="Responsive image" >
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+        <div class="collapse navbar-collapse ml-md-5" id="navbarNavDropdown">
+                <ul class="navbar-nav  mr-auto " id="top-nav">
+                    
+                    <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>  
+                        Home</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-check-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                        </svg>
+                        Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                            </svg>
+                            Daftar Seminar</a>
+                    </li>
+                    <li class="nav-item mr-sm-5">
+                        <a class="nav-link" href="#berita">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                            </svg>
+                            Berita</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-md-5 mr-sm-4 " id="top-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                            Daftar
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+</div> -->
+<!-- Jumbotron -->
+<div class="container pt-5" >
+    <img src="/img/j1.png"  class="img-fluid" alt="Responsive image" style="width: 100%; opacity: 2.0; ">
+</div>
+<!-- End jumbotron -->
+    <!-- breadcup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" >
+                <nav aria-label="breadcrumb" >
+                    <ol class="breadcrumb" style="background-color: #9FEDD7;">
+                        <li class="breadcrumb-item  " aria-current="page">
+                            <a href="/" >Home</a>
+                        </li>
+                            <li class="breadcrumb-item  " aria-current="page">
+                                <a href="index.html" > Jadwal </a>
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">
+                                <a href="detail_jadwal_seminarTA.html"> Detail jadwal</a>
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">
+                                <a href="detail_jadwal_seminarTA.html" style="color: black;"> Daftar Peserta</a>
+                            </li>
+                    </ol>
+                </nav>
+        </div>
+    </div>
+</div>
+    <!-- breadcup -->
+<!-- end header -->
+
+<!-- Containter 1  -->
+<div class="container">
+    <!-- content row 1 -->
+    <div class="container" style="background-color: #ffffff" >
+        <div class="row p-3 p-md-5 p-lg-5 ">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <!-- <hr> -->
+                    <ul>
+                        <li>Mahasiswa Seminar : &nbsp; </li>
+                        <li>Judul : </li>
+                        <li>Waktu : </li>
+                    </ul>
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+            
+                <div class="card">
+                    <div class="card-header">
+                      Form Peserta Seminar
+                    </div>
+                    <div class="card-body">
+                    <!-- nim -->
+                <form>
+                    <div class="form-group row">
+                      <label for="inputNim3" class="col-sm-2 col-form-label">NIM</label>
+                      <div class="col-sm-10">
+                        <input type="Nim" class="form-control" id="inputNim3" placeholder="Nim">
+                      </div>
+                    </div>
+                    <!-- nama -->
+                    <div class="form-group row">
+                      <label for="inputNama3" class="col-sm-2 col-form-label">Nama</label>
+                      <div class=" col-md-4 col-sm-10">
+                        <input type="Nama" class="form-control" id="inputNama3" placeholder="Nama">
+                      </div>
+                    </div>
+                    <!-- prodi -->
+                    <div class="form-group row">
+                        <label for="inputprodi" class="col-md-2 col-form-label">Prodi</label>
+                        <div class="col-md-4">
+                            <select id="inputState" class="form-control">                
+                                <option selected>Pilih Prodi</option>
+                                <option>Sistem Informasi</option>
+                                <option>Teknik Informatika</option>
+                              </select>
+                        </div>     
+                      </div>
+                    <!-- program -->
+                    <fieldset class="form-group table">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Program</legend>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                             D3
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              S1 Reguler
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              S1 Fast Track
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              S2
+                            </label>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </fieldset>
+        
+                    
+                    <div class="form-group row">
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-success" onclick="pindah()">Daftar</button>
+                      </div>
+                    </div>
+                  </form>
+                    </div>
+                  </div>
+                  
+
+               
+            </div>
+        </div>
+      
+    </div>
+    <!-- End content row1 -->
+</div>
+<!-- End Content -->
+<!-- Footer -->
+<div class="container mt-1">
+    <footer style="background-color: #026670; color: #ffffff;">
+            <br>        
+                <div class="row mt-3 p-5"> 
+                    <!-- kontak -->
+                    <div class="col-md-4 col-lg- col-xl-4  mb-4">
+                        
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold">Kontak</h6>
+                        <br>
+                        <p>Jalan Lenteng Agung Raya No. 20, 
+                            Kel. Lenteng Agung Kec. Jagakarsa, 
+                            Jakarta Selatan - 12640
+                        </p>
+                        <p>
+                            Telp : (021) 7863191
+                        </p>
+                        <p>
+                            Email: info@nurulfikri.ac.id
+                        </p>
+                    </div>
+                   <!-- end kontak -->
+
+                   <!-- lokasi -->
+                    <div class=" col-lg-4 col-md-4 col-xl-4 mb-4 text-center">
+                        <!-- Links -->
+                        <div class="col-12">
+                            
+                        </div>
+                        <h6 class="text-uppercase font-weight-bold">Location</h6>
+                        <br>
+                        <iframe  class="text-center" style="width: 80%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.3292996603527!2d106.83192752916601!3d-6.3529662997126595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec6b07b68ea5%3A0x17da46bdf9308386!2sSTT%20Terpadu%20Nurul%20Fikri%20-%20Kampus%20B!5e0!3m2!1sid!2sid!4v1609980644417!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="col-sm-12"> 
+                        </iframe>
+                       
+                    </div>
+                    <!-- end lokasi -->
+                    
+                    <!--  Media Social -->
+                    <div class=" col-md-4 col-lg-4 col-3 mx-auto mb-md-0 mb-4 text-center ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold ">Media Sosial</h6>
+                        <br>
+                        <div class="row">
+                            <div class=" col-lg-12 col-md-12 col-sm-12 col-auto-4" >
+                                <a href="#facebook">
+                                    <p>
+                                        <img src="img/icons/facebook.png" class=""> 
+                                    </p>
+                                    
+                                </a>
+                            </div>
+                            <div class=" col-lg-12 col-md-12 col-sm-12 col-auto-4">        
+                                <a href="#facebook">
+                                    <p>
+                                        <img src="img/icons/twitter.png" class=""> 
+                                    </p>
+                                </a>
+                            </div>
+                            <div class=" col-lg-12 col-md-12 col-sm-12 col-auto-4">
+                                <a href="#facebook">
+                                    <p>
+                                        <img src="img/icons/instagram.png" class=""> 
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- end media social -->
+                       
+                        <!-- Footer Links -->
+                <hr class=" mb-2  mx-auto" style="width: 93%;  background-color:#ffffff">
+                
+                <!-- footer botton -->
+                <div class="footer-copyright text-center py-3">
+                    <p style="color: white;">Project ©2021 - SISTA</p>
+                </div>
+                <!-- enf footer bottom -->
+    </footer>
+</div>
+<!-- End Footer -->
+</body>
+</html>

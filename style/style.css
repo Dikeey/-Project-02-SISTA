@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FCE9C7;
+    padding: 0;
+    margin: 0;
+}
+
+#top-nav li a {
+
+    transition: 300ms;
+}
+
+#top-nav li a:hover {
+    color: black;
+    scale: 1.1;
+    opacity: 1.0;
+}
+
+#card {
+    transition: 1s;
+}
+
+#card:hover {
+    scale: 1.1;
+    box-shadow: 1px 1px 10px black;
+}
+
+hr {
+    background-color: black;
+    margin-left: 0;
+}
+
+.container {
+    align-items: center;
+}
+
+/* cards */
+
+/* jadwal Seminar */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 360px) {
+    #table {
+        width: 80%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #sidebar {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 575.98px) {
+
+    #sidebar {
+        display: none;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}

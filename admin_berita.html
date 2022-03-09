@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_jadwalTA.css">
+    <title>Data Berita</title>
+    <style>
+        .container a{
+            text-decoration: none;
+        }
+        hr {
+            width: 1%;
+            margin-left: 0;
+        }
+        .font{
+            color: black;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    
+    <!-- Header -->
+    <div class="container fixed-top">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar pl-5  shadow-lg navbar-expand-lg navbar-light  pr-md-4 justify-content-between " style="background-color: #1499A6; ">
+                    
+                    <a class="navbar-brand" href="#"><img src="img/logo/logo-sista.png"  alt="Responsive image" >
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse ml-md-5" id="navbarNavDropdown">
+                        <ul class="navbar-nav  mr-auto " id="top-nav">
+                        </ul>
+                        <ul class="navbar-nav ml-md-5 mr-sm-4 " id="top-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                    </svg>
+                                    Admin
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                    </svg>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+        <div class="container pt-5" >
+            <img src="/img/j1.png"  class="img-fluid" alt="Responsive image" style="width: 100%; opacity: 2.0; ">
+        </div>
+        <!-- End jumbotron -->
+        <!-- Navbar -->
+        <div class="container">
+            <div class="col-md-12"></div>
+            <ul class="nav justify-content-center" style="background-color: #9FEDD7;">
+                <li class="nav-item">
+                    <a class="nav-link active font" href="admin_data_user.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font" href="admin_jadwal.html">Jadwal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font" href="admin_daftar_seminar.html">Daftar Seminar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font" href="#">Berita</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- end header -->
+    
+    <!-- Content -->
+    <div class="container">
+        
+        <div class="container" style="background-color: #ffffff;">
+            <div class="row p-4 justify-content-center">
+                <div class="col-md-12 col-sm-10">
+                    <div class="container table-responsive py-2"> 
+                        <div col-md-12 col-sm-10>
+                            <div class="col-md-6 col-sm-6"><h3 class="mb-3 py-2 pb-4">Data Berita</h3></div>
+                        </div>
+                        <div class="container" style="background-color: #ffffff;">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Judul Berita</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Kategori Berita</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>                             
+                                <div class="form-group row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="customFile" class="col-sm-2 col-form-label">Gambar</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">      
+                                            <input type="file" class="custom-file-input" id="customFile">       
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="news" class="col-sm-2 col-form-label">Berita</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="news" rows="1"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">&nbsp&nbsp&nbsp Penulis</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                            
+                            <div class="form-group row">
+                                <div class="col-sm-12" >
+                                    <button type="submit" class="btn btn-primary col-sm-3 col-form-label">Input</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <br>
+                    <!-- Tabel Berita -->
+                    <table class="table table-responsive table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Kategori Berita</th>
+                                <th scope="col">Judul Berita</th>
+                                <th scope="col">Gambar Berita</th>
+                                <th scope="col">Isi Berita</th>
+                                <th scope="col">Penulis Berita</th>
+                                <th scope="col">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Peristiwa</td>
+                                <td>Penyelamatan Pencarian Sriwijaya Air</td>
+                                <td><img src="" alt=""></td>
+                                <td>Jakarta Direktur Operasi Basarnas Brigadir Jendral (Mar) Razman mengatakan, penyelaman guna mencari korban dan serpihan pesawat Sriwijaya Air SJ 182 untuk sementara waktu dihentikan ...</td>
+                                <td>Fazri</td>
+                                <td><a href="admin_berita_edit.html"><button type="button" class="btn btn-primary">Edit</button></a>&nbsp<button type="button" class="btn btn-success mt-2">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Bisnis</td>
+                                <td>Tips Investasi ala Warren Buffet</td>
+                                <td><img src="" alt=""></td>
+                                <td>Warren Buffett, investor Amerika Serikat (AS), dianggap sebagai salah satu investor paling sukses di dunia. Dengan kekayaan bersih mencapai USD 87,4 miliar, Buffett secara historis merumuskan filosofi investasinya seputar konsep investasi nilai ...</td>
+                                <td>Faiz</td>
+                                <td><button type="button" class="btn btn-primary">Edit</button>&nbsp<button type="button" class="btn btn-success mt-2">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Content -->
+
+
+<!-- Footer -->
+<div class="container mt-1">
+    <footer style="background-color: #026670; color: #ffffff;">
+        <br>        
+        <div class="row mt-3 p-5"> 
+            <!-- kontak -->
+            <div class="col-md-4 col-lg- col-xl-4  mb-4">
+                
+                <!-- Content -->
+                <h6 class="text-uppercase font-weight-bold">Kontak</h6>
+                <br>
+                <p>Jalan Lenteng Agung Raya No. 20, 
+                    Kel. Lenteng Agung Kec. Jagakarsa, 
+                    Jakarta Selatan - 12640
+                </p>
+                <p>
+                    Telp : (021) 7863191
+                </p>
+                <p>
+                    Email: info@nurulfikri.ac.id
+                </p>
+            </div>
+            <!-- end kontak -->
+            
+            <!-- lokasi -->
+            <div class=" col-lg-4 col-md-4 col-xl-4 mb-4 text-center">
+                <!-- Links -->
+                <div class="col-12">
+                    
+                </div>
+                <h6 class="text-uppercase font-weight-bold">Location</h6>
+                <br>
+                <iframe  class="text-center" style="width: 80%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.3292996603527!2d106.83192752916601!3d-6.3529662997126595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec6b07b68ea5%3A0x17da46bdf9308386!2sSTT%20Terpadu%20Nurul%20Fikri%20-%20Kampus%20B!5e0!3m2!1sid!2sid!4v1609980644417!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="col-sm-12"> 
+                </iframe>
+                
+            </div>
+            <!-- end lokasi -->
+            
+            <!--  Media Social -->
+            <div class=" col-md-4 col-lg-4 col-3 mx-auto mb-md-0 mb-4 text-center ">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold ">Media Sosial</h6>
+                <br>
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12 col-sm-12 col-auto-4" >
+                        <a href="#facebook">
+                            <p>
+                                <img src="img/icons/facebook.png" class=""> 
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class=" col-lg-12 col-md-12 col-sm-12 col-auto-4">        
+                        <a href="#facebook">
+                            <p>
+                                <img src="img/icons/twitter.png" class=""> 
+                            </p>
+                        </a>
+                    </div>
+                    <div class=" col-lg-12 col-md-12 col-sm-12 col-auto-4">
+                        <a href="#facebook">
+                            <p>
+                                <img src="img/icons/instagram.png" class=""> 
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end media social -->
+        
+        <!-- Footer Links -->
+        <hr class=" mb-2  mx-auto" style="width: 93%;  background-color:#ffffff">
+        
+        <!-- footer botton -->
+        <div class="footer-copyright text-center py-3">
+            <p style="color: white;">Project ©2021 - SISTA</p>
+        </div>
+        <!-- enf footer bottom -->
+    </footer>
+</div>
+<!-- End Footer -->
+</body>
+</html>
